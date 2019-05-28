@@ -1,6 +1,7 @@
 import React from 'react';
 import RCSlider from 'rc-slider';
 import styled from 'styled-components';
+import 'rc-slider/assets/index.css';
 
 const CCSliderStyled = styled.div`
   display: inline-block;

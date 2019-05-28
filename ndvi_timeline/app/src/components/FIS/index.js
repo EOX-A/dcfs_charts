@@ -1,17 +1,12 @@
 import React, { Component } from 'react';
-import cloneDeep from 'lodash/cloneDeep';
 import moment from 'moment';
 import request from 'axios';
 import Rodal from 'rodal';
-import Terraform from 'terraformer';
-import WKT from 'terraformer-wkt-parser';
 import { XYFrame } from 'semiotic';
-import { getRecommendedResolution } from '../../utils/coords';
 import './FIS.scss';
 import Store from '../../store';
 import Button from '../Button';
 import CCSlider from '../CCSlider';
-import { isCustomPreset } from '../../utils/utils';
 
 const tooltipContent = (dataPoint, drawDistribution) => (
   <div>
@@ -86,8 +81,8 @@ export default class FIS extends Component {
   constructor(props) {
     super(props);
 
-    const { selectedResult, presets } = Store.current;
-    const layerName = '__FIS_3_NDVI'
+    // const { selectedResult, presets } = Store.current;
+    // const layerName = '__FIS_3_NDVI'
     // const layerName = isCustomPreset(selectedResult.preset)
       // ? 'custom'
       // : presets[selectedResult.name].find(layer => layer.id === selectedResult.preset).name;
@@ -191,19 +186,19 @@ export default class FIS extends Component {
   }
 
   constructRequestParameters(fromDate, toDate) {
-    const { poi, aoiBounds, presets, selectedResult } = Store.current;
+    // const { poi, aoiBounds, presets, selectedResult } = Store.current;
     // const area = this.props.aoiOrPoi === 'aoi' ? aoiBounds : poi.polygon;
     // const geom = WKT.convert(new Terraform.Primitive(cloneDeep(area.geometry)));
     // const resolution = getRecommendedResolution(area.geometry);
 
     // const url = selectedResult.baseUrls.FIS;
-    if (selectedResult != null) {
-      console.log(selectedResult.baseUrls.FIS);
-    }
+    // if (selectedResult != null) {
+    //   console.log(selectedResult.baseUrls.FIS);
+    // }
     const url = 'https://services.sentinel-hub.com/ogc/fis/cd280189-7c51-45a6-ab05-f96a76067710';
     // let layerId;
     // const isCustomLayer = isCustomPreset(selectedResult.preset);
-    const isCustomLayer = true;
+    // const isCustomLayer = true;
     // if (isCustomLayer) {
     //   layerId = presets[selectedResult.name][0].id; // any available layer on this datasource will be fine
     // } else {
