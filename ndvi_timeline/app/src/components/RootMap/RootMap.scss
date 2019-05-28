@@ -151,6 +151,8 @@
 
 .rodal-mask {
   display: block !important;
+}
+body, .rodal-mask {
   background: #111215 !important;
 }
 .leaflet-container, .floatItem, #aboutSentinel, .eocloudRoot > div > div:first-child {
