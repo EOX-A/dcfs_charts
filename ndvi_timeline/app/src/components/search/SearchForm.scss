@@ -1,0 +1,106 @@
+@import '../../variables.scss';
+
+.searchForm {
+  padding: 10px;
+
+  div.topLabel {
+    font-weight: bold;
+    color: #b5bdcc;
+  }
+
+  div.topLabel > div {
+    margin: 5px 0 10px 20px;
+    font-weight: normal;
+    font-size: 0.8em;
+  }
+
+  div.clear {
+    clear: both;
+  }
+
+  a.configurationsSettings {
+    margin-left: 10px;
+  }
+
+  div.dataSourceGroup {
+    clear: both;
+
+    label {
+      float: left;
+      clear: both;
+      color: #cdd5e3;
+    }
+
+    div.datasources {
+      margin-left: 20px;
+      clear: both;
+    }
+
+    div.filters {
+      margin-left: 25px;
+      clear: both;
+
+      & > div {
+        float: left;
+      }
+
+      div.filter {
+        clear: both;
+        line-height: 30px;
+        position: relative;
+        display: block;
+
+        label {
+          vertical-align: middle;
+          display: inline-block;
+          margin-right: 20px;
+        }
+
+        select {
+          margin-left: 20px;
+          float: right;
+          height: 25px;
+        }
+      }
+
+    }
+
+  }
+
+  .checkboxGroup {
+    label {
+      display: block;
+    }
+  }
+
+  & > label,
+  & > label + * {
+    margin-bottom: 5px;
+    display: inline-block;
+    margin-right: 5px;
+  }
+
+  .btn {
+    display: block;
+    text-align: center;
+    margin: 20px 20px 10px;
+  }
+}
+
+.selectTimeRange {
+  margin-top: 20px;
+
+  & > label {
+    display: block;
+  }
+
+  div.inlineDatepicker {
+    margin: 0 20px;
+    padding: 0;
+  }
+
+  span.datePickerSeparator {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
