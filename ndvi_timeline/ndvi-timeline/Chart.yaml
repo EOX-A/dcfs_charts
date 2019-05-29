@@ -1,0 +1,5 @@
+apiVersion: v0.1
+appVersion: "0.1"
+description: An example Helm Chart for the DCFS Project
+name: ndvi-timeline
+version: 0.2.0
