@@ -218,7 +218,8 @@ export default class FIS extends Component {
       resolution: '241m',
       // geometry: geom,
       // geometry: 'POLYGON ((12.049255371093752 42.13082130188811, 12.818298339843752 42.13082130188811, 12.815551757812502 41.6195489884308, 12.052001953125002 41.62776153144345, 12.049255371093752 42.13082130188811))',
-      geometry: process.env.REACT_APP_INPUT_GEOMETRY,
+      // eslint-disable-next-line no-undef
+      geometry: 'INPUT_GEOMETRY',
       bins: 10,
       type: 'EQUALFREQUENCY',
       maxcc: 100,
