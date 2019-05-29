@@ -49,8 +49,9 @@
   "scripts": {
     "analyze": "source-map-explorer build/static/js/main.*",
     "prettier": "prettier --write 'src/**/*.js'",
+    "dev": "chmod +x ./env.sh && ./env.sh && cp env-config.js ./public/ && react-scripts start",
     "start": "node -r dotenv/config ./node_modules/.bin/react-scripts start dotenv_config_path=config/development.env",
-    "build": "node -r dotenv/config ./node_modules/.bin/react-scripts build dotenv_config_path=config/${BUILD_ENV}.env  ",
+    "build": "react-scripts build",
     "build:testing": "BUILD_ENV=testing npm run build",
     "build:staging": "BUILD_ENV=staging npm run build",
     "build:production": "BUILD_ENV=production npm run build",

@@ -207,7 +207,7 @@ export default class FIS extends Component {
     //   const shadowLayerInfo = getFisShadowLayer(selectedResult.name, originalLayerId);
     //   layerId = shadowLayerInfo ? shadowLayerInfo.id : originalLayerId;
     // }
-
+    console.log(window._env_.INPUT_GEOMETRY)
     let params = {
       // layer: layerId,
       layer: '__FIS_3_NDVI',
@@ -219,7 +219,7 @@ export default class FIS extends Component {
       // geometry: geom,
       // geometry: 'POLYGON ((12.049255371093752 42.13082130188811, 12.818298339843752 42.13082130188811, 12.815551757812502 41.6195489884308, 12.052001953125002 41.62776153144345, 12.049255371093752 42.13082130188811))',
       // eslint-disable-next-line no-undef
-      geometry: 'INPUT_GEOMETRY',
+      geometry: window._env_.INPUT_GEOMETRY,
       bins: 10,
       type: 'EQUALFREQUENCY',
       maxcc: 100,
