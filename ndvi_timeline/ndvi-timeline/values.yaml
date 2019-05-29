@@ -50,5 +50,4 @@ tolerations: []
 affinity: {}
 
 env:
-- name: INPUT_POLYGON
-  value: "POLYGON ((10 42.1, 10.1 42.1, 10.1 41.6, 10 41.6, 10 42.1))"
+  INPUT_GEOMETRY: POLYGON ((11 42, 11 42.1, 11.1 42.05, 11 42))
