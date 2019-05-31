@@ -1,0 +1,32 @@
+@import './variables';
+
+// DCFS demonstrator
+.rodal-mask {
+  display: block !important;
+}
+body, .rodal-mask {
+  background: #111215 !important;
+}
+.leaflet-container, .floatItem, #aboutSentinel, .eocloudRoot > div > div:first-child, .rodal-close {
+  display: none !important;
+}
+div.rc-slider .rc-slider-handle {
+  border-color: #b6bf00;
+}
+.rc-slider-handle {
+  position: absolute;
+  margin-left: -7px;
+  margin-top: -5px;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+  cursor: -webkit-grab;
+  cursor: grab;
+  border-radius: 50%;
+  border: 2px solid #96dbfa;
+  background-color: #fff;
+  touch-action: pan-x;
+}
+div.rc-slider .rc-slider-track {
+  background: #b6bf00;
+}
