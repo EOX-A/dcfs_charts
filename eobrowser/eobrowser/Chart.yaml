@@ -3,4 +3,4 @@ appVersion: "1.0"
 description: A Helm chart for Kubernetes
 icon: https://avatars3.githubusercontent.com/u/38495336?s=460&v=4
 name: eobrowser
-version: 0.1.0
+version: 0.1.1
