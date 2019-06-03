@@ -1,0 +1,6 @@
+apiVersion: v1
+appVersion: "1.1"
+description: s2maps.eu map
+icon: https://s2maps.eu/img/android-chrome-512x512.png
+name: s2maps
+version: 0.1.1

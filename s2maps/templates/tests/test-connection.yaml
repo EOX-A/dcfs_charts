@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "s2maps.fullname" . }}-test-connection"
+  labels:
+{{ include "s2maps.labels" . | indent 4 }}
+  annotations:
+    "helm.sh/hook": test-success
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args:  ['{{ include "s2maps.fullname" . }}:{{ .Values.service.port }}']
+  restartPolicy: Never
