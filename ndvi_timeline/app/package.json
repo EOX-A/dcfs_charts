@@ -24,7 +24,7 @@
     "jszip": "^3.1.5",
     "jszip-utils": "^0.0.2",
     "jwt-decode": "^2.2.0",
-    "lodash": "^4.15.0",
+    "lodash": "^4.17.21",
     "moment": "^2.21.0",
     "prop-types": "^15.6.1",
     "rc-slider": "^4.0.1",
